@@ -60,7 +60,7 @@ export default function WhyChooseMe() {
             <div className='w-[90%] lg:w-[90%] mx-auto h-full '>
                 <Title title={"لماذا ديجيتال مايند"} />
 
-                <div className="w-full h-[500px transform duration-1000 lg:hidden ">
+                <div className="w-full h-full transform duration-1000 lg:hidden ">
                     <img src={images[isactive]?.img} className="w-full h-full transform duration-1000 " />
                 </div>
 
@@ -69,7 +69,7 @@ export default function WhyChooseMe() {
                     <div className="w-full h-[500px] ">
                         {
                             cards.map((item, index) => (
-                                <div className={`lg:w-full 3xl:w-[80%] mx-auto h-[110px] border rounded-[70px] border-[#00BF62] ${isactive === index ? `bg-[#00BF62] transform duration-500` : `bg-white`} mb-5`} key={index} onClick={() => setIsActive(index)}>
+                                <div className={`lg:w-full shadow 3xl:w-[80%] mx-auto h-[110px] border rounded-[70px]  ${isactive === index ? `bg-[#00BF62] transform duration-500` : `bg-white`} mb-5`} key={index} onClick={() => setIsActive(index)}>
                                     <div className="flex  items-center gap-3 py-5 pr-[10px]">
                                         <div className="w-[60px] h-[60px]">
                                             <img src={item.img} className="w-full h-full" />
@@ -86,17 +86,12 @@ export default function WhyChooseMe() {
                                 </div>
                             ))
                         }
-
-
                     </div>
 
 
                     <div className="w-full h-[500px] transform duration-1000 hidden lg:block">
                         <img src={images[isactive]?.img} className="w-full h-full transform duration-1000" />
                     </div>
-
-
-
 
                 </div>
             </div>

@@ -4,7 +4,7 @@ import Boys from "../../image/Hero/pngtree-kids-and-robots-a-fun-learning-experi
 
 export default function HeroSection() {
     return (
-        <div className=' md:h-full relative -z-10'>
+        <div className=' md:h-full relative '>
             <div className="w-[80%] mx-auto ">
                 <div className=" md:text-start md:flex md:justify-center md:items-center md:gap-10 ">
                     <div className="md:w-[100%]">

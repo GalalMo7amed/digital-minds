@@ -44,7 +44,7 @@ const traks = [
 
 export default function Technologys() {
     return (
-        <div className="w-[90%] h-full shadow-2xl mx-auto rounded-3xl mb-5">
+        <section className="w-[90%] h-full shadow-2xl mx-auto rounded-3xl mb-5">
             <div className=' lg:w-[80%] mx-auto h-full md:mt-24 lg:mt-[150px] 3xl:mt-10 pt-5'>
                 <Title title={"أداة تطوير برمجي و تكنولوجيا احترافية في منهج واحد"} />
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 mt-10">
@@ -65,6 +65,6 @@ export default function Technologys() {
 
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
